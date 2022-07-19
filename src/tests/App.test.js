@@ -42,7 +42,6 @@ ao clicar no link Favorite Pokémons da barra de navegação;`, async () => {
     name: /favorite pokémons/i,
   });
   expect(favpok).toBeInTheDocument();
-  console.log(screen.logTestingPlaygroundURL());
 });
 it(`Teste se a aplicação é redirecionada para a página Not Found
  ao entrar em uma URL desconhecida.`, () => {
@@ -52,5 +51,4 @@ it(`Teste se a aplicação é redirecionada para a página Not Found
     name: /page requested not found/i,
   });
   expect(favpok).toBeInTheDocument();
-  console.log(screen.logTestingPlaygroundURL());
 });
